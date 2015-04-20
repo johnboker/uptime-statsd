@@ -26,7 +26,7 @@ var registerStatsdLogger = function(options, sdc) {
 	Ping.on('afterInsert', function(ping) {
 		ping.findCheck(function(err, check) {
 			var name = check.name + '';
-			name = name.replace('.', '_').replace(' ', '_').toLowerCase();
+			name = name.toLowerCase().replace(/\W+/g, "_");
 			sdc.gauge('uptime.' + name + '.responsetime', ping.time);
 			console.log('uptime.' + name + '.responsetime: ' + ping.time);
 		});
