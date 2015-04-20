@@ -14,6 +14,9 @@
     "uptime",
     "statsd"
   ],
+  "dependencies": {
+	"statsd-client": "0.1.0"
+  },
   "author": {
     "name": "John Boker",
     "email": "johnboker@gmail.com"
