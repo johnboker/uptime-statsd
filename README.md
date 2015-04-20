@@ -5,7 +5,7 @@ This plugin has a depencency on statsd-client@0.1.0
 
     $ npm install statsd-client@0.1.0
 
-create directory plugins/statsd/ and place index.js inside.
+create directory **plugins/statsd/** and place **index.js** inside.
 
 Enable the plugin in your config yaml:
 
