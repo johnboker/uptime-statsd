@@ -9,14 +9,14 @@ create directory plugins/statsd/ and place index.js inside.
 
 Enable the plugin in your config yaml:
 
-<code><pre>plugins:
-  - ./plugins/statsd</pre></code>
+    plugins:
+        - ./plugins/statsd
 
 Add your plugin configuration to your config yaml and you should be ready to go:
 
-<code><pre>statsd:
-  host:    #your statsd host
-  port:    #your statsd port
-  prefix:  #your statsd prefix</pre></code>
+    statsd:
+        host:    #your statsd host
+        port:    #your statsd port
+        prefix:  #your statsd prefix
 
 Uptime: https://github.com/fzaninotto/uptime
