@@ -15,7 +15,7 @@ exports.initMonitor = function(options) {
 
 var registerStatsdLogger = function(options, sdc) {
 	
-	var config = options.config.statsd;
+	var config = options.config.statsd; 
 	
 	var sdc = new SDC({
 		host : config.host,
